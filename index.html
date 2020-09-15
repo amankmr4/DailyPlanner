@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/cd7fb45b2e.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment.min.js"></script>
     <title>Daily Planner</title>
 </head>
 <body>
@@ -13,68 +15,69 @@
     <div class="jumbotron">
         <h1>Work Day Planner</h1>
         <p>A simple calender app for scheduling your work day</p>
-        <p>This is where your current time will go</p>
+        <p id="welcomeDate"></p>
     </div>
 </div>
+<hr class="lines">
 <!--This is where we hold all our main content-->
     <Div class="container text-center">
 
     <div class="row 9ambox">
-        <p class="col-2">9AM</p>
+        <p class="col-2 timeref">9AM</p>
         <textarea class="col-7" id="9amtext" name="9"></textarea>
-        <button class="col-1"><i class="far fa-save"></i></button>
+        <button class="col-1"><span><i class="far fa-save"></i></button></span>
     </div>
 
     <div class="row 10ambox">
-        <p class="col-2">10AM</p>
+        <p class="col-2 timeref">10AM</p>
         <textarea class="col-7" id="10amtext" name="10"></textarea>
         <button class="col-1"><i class="far fa-save"></i></button>
     </div>
 
     <div class="row 11ambox">
-        <p class="col-2">11AM</p>
+        <p class="col-2 timeref">11AM</p>
         <textarea class="col-7" id="11amtext" name="11"></textarea>
         <button class="col-1"><i class="far fa-save"></i></button>
     </div>
 
     <div class="row 12pmbox">
-        <p class="col-2">12PM</p>
+        <p class="col-2 timeref">12PM</p>
         <textarea class="col-7" id="12pmtext" name="12"></textarea>
         <button class="col-1"><i class="far fa-save"></i></button>
     </div>
 
     <div class="row 1pmbox">
-        <p class="col-2">1PM</p>
+        <p class="col-2 timeref">1PM</p>
         <textarea class="col-7" id="1pmtext" name="13"></textarea>
         <button class="col-1"><i class="far fa-save"></i></button>
     </div>
 
     <div class="row 2pmbox">
-        <p class="col-2">2PM</p>
+        <p class="col-2 timeref">2PM</p>
         <textarea class="col-7" id="2pmtext" name="14"></textarea>
         <button class="col-1"><i class="far fa-save"></i></button>
     </div>
 
     <div class="row 3pmbox">
-        <p class="col-2">3PM</p>
+        <p class="col-2 timeref">3PM</p>
         <textarea class="col-7" id="3pmtext" name="15"></textarea>
         <button class="col-1"><i class="far fa-save"></i></button>
     </div>
 
     <div class="row 4pmbox">
-        <p class="col-2">4PM</p>
+        <p class="col-2 timeref">4PM</p>
         <textarea class="col-7" id="4pmtext" name="16"></textarea>
         <button class="col-1"><i class="far fa-save"></i></button>
     </div>
 
     <div class="row 5pmbox">
-        <p class="col-2">5PM</p>
+        <p class="col-2 timeref">5PM</p>
         <textarea class="col-7" id="5pmtext" name="17"></textarea>
         <button class="col-1"><i class="far fa-save"></i></button>
     </div>
 </Div>
 
-
+<script src="script.js"></script>
 
 
     
