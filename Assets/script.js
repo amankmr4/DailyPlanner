@@ -11,7 +11,7 @@ var pm4txt = $("#4pmtext");
 var pm5txt = $("#5pmtext");
 
 //we are creating a variable that will hold our current dates and time
-var todaysDate = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+var todaysDate = moment().format("dddd, MMMM Do YYYY, h:mm a");
 
 //// here we are chaning its text content
 $(todaysText).text(todaysDate);
