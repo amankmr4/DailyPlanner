@@ -4,10 +4,10 @@ var am9txt = $("#9amtext");
 var am10txt = $("#10amtext");
 var am11txt = $("#11amtext");
 var pm12txt = $("#12pmtext");
-var pm1txt = $("#1pmbox");
-var pm2txt = $("#2pmbox");
-var pm3txt = $("#3pmbox");
-var pm4txt = $("#4pmbox");
+var pm1txt = $("#1pmtext");
+var pm2txt = $("#2pmtext");
+var pm3txt = $("#3pmtext");
+var pm4txt = $("#4pmtext");
 var pm5txt = $("#5pmtext");
 
 //we are creating a variable that will hold our current dates and time
@@ -41,25 +41,25 @@ $("textarea").each(function() {
 //we will create an event listner to all our buttons
 $("button").on("click", function () {
 //here we will local storage for all our input once the button has been pressed
-localStorage.setItem("9AM", (am9txt.val()))
-localStorage.setItem("10AM", (am10txt.val()))
-localStorage.setItem("11AM", (am11txt.val()))
-localStorage.setItem("12PM", (pm12txt.val()))
-localStorage.setItem("1PM", (pm1txt.val()))
-localStorage.setItem("2PM", (pm2txt.val()))
-localStorage.setItem("3PM", (pm3txt.val()))
-localStorage.setItem("4PM", (pm4txt.val()))
-localStorage.setItem("5pm", (pm5txt.val()))
+localStorage.setItem("9AM", (am9txt.val()));
+localStorage.setItem("10AM", (am10txt.val()));
+localStorage.setItem("11AM", (am11txt.val()));
+localStorage.setItem("12PM", (pm12txt.val()));
+localStorage.setItem("1PM", (pm1txt.val()));
+localStorage.setItem("2PM", (pm2txt.val()));
+localStorage.setItem("3PM", (pm3txt.val()));
+localStorage.setItem("4PM", (pm4txt.val()));
+localStorage.setItem("5pm", (pm5txt.val()));
 
 })
 
 // lets append the input so it stays on after refreshed
 $("#9amtext").append(localStorage.getItem("9AM"));
-$("#9amtext").append(localStorage.getItem("10AM"));
-$("#9amtext").append(localStorage.getItem("11AM"));
-$("#9amtext").append(localStorage.getItem("12PM"));
-$("#9amtext").append(localStorage.getItem("1PM"));
-$("#9amtext").append(localStorage.getItem("2PM"));
-$("#9amtext").append(localStorage.getItem("3PM"));
-$("#9amtext").append(localStorage.getItem("4PM"));
-$("#9amtext").append(localStorage.getItem("5PM"));
+$("#10amtext").append(localStorage.getItem("10AM"));
+$("#11amtext").append(localStorage.getItem("11AM"));
+$("#12pmtext").append(localStorage.getItem("12PM"));
+$("#1pmtext").append(localStorage.getItem("1PM"));
+$("#2pmtext").append(localStorage.getItem("2PM"));
+$("#3pmtext").append(localStorage.getItem("3PM"));
+$("#4pmtext").append(localStorage.getItem("4PM"));
+$("#5pmtext").append(localStorage.getItem("5PM"));
