@@ -22,3 +22,17 @@ button{
 .backgroundpast {
     background-color: gray;
 }
+
+button:hover {
+    box-shadow: gray;
+    background-color: green;
+}
+
+textarea:hover{
+    
+        box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+        outline: 0;
+        cursor: pointer;
+        border: black solid;
+      
+}
